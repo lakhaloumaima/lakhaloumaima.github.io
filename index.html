@@ -23,7 +23,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvUPbYxZw3ira_UWjml18WHDub-EBg--0&callback=initMap"
+		async defer></script>
 </head>
 
 <body>
@@ -31,9 +32,39 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
+
+		<!-- Header with Navbar -->
 		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
 			style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+
 			<div class="overlay"></div>
+
+			<!-- Navbar -->
+			<nav id="fh5co-main-nav" class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#page">Lakhal Oumaima</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#fh5co-about" class="smoothscroll">About</a></li>
+							<li><a href="#fh5co-resume" class="smoothscroll">Resume</a></li>
+							<li><a href="#fh5co-skills" class="smoothscroll">Skills</a></li>
+							<li><a href="#fh5co-work" class="smoothscroll">Projects</a></li>
+							<li><a href="#fh5co-consult" class="smoothscroll">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Profile Section -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
@@ -41,22 +72,20 @@
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 								<div class="profile-thumb" style="background: url(images/me.jpeg);"></div>
 								<h1><span>Lakhal Oumaima</span></h1>
-								<h3><span>Full Web Stack Developer </span></h3>
-								<p>
+								<h3><span>Full Web Stack Developer</span></h3>
 								<ul class="fh5co-social-icons">
 									<li><a href="https://github.com/lakhaloumaima"><i class="icon-github2"></i></a></li>
 									<li><a href="https://www.linkedin.com/in/lakhal-oumaima-a02ab71ba/"><i
 												class="icon-linkedin2"></i></a></li>
-
 									<li><a href="#"><i class="icon-facebook2"></i></a></li>
 									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
 								</ul>
-								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</header>
 
 		<div id="fh5co-about" class="animate-box">
@@ -69,37 +98,41 @@
 				<div class="row">
 					<div class="col-md-4">
 						<ul class="info">
-							<li><span class="first-block">Full Name:</span><span class="second-block">
-									Lakhal Oumaima
-								</span></li>
-							<li><span class="first-block">Phone:</span><span class="second-block">+216 24 540 686</span>
+							<li>
+								<span class="first-block">Full Name:</span>
+								<span class="second-block">Lakhal Oumaima</span>
 							</li>
-							<li><span class="first-block">Email:</span><span
-									class="second-block">oumeymalkh24@gmail.com</span></li>
-
-							<li><span class="first-block">Address:</span><span class="second-block">Tunisie, monastir </span></li>
+							<li>
+								<span class="first-block">Phone:</span>
+								<span class="second-block">+216 24 540 686</span>
+							</li>
+							<li>
+								<span class="first-block">Email:</span>
+								<span class="second-block">lakhalouma6@gmail.com</span>
+							</li>
+							<li>
+								<span class="first-block">Address:</span>
+								<span class="second-block">Monastir, Tunisia</span>
+							</li>
 						</ul>
 					</div>
 					<div class="col-md-8">
 						<h2>Hello There!</h2>
-						<p>Passionate web developer,
-							specialized in
-							full-stack development with
-							expertise. Currently
-							working in a web
-							development company working
-							on the Altagem application. I am
-							looking for a new
-							opportunity to continue
-							developing my skills and
-							taking on new challenges.
+						<p>
+							I am a passionate Full Stack Developer with over three years of professional
+							experience in developing web applications. Currently, I work
+							at Com-and-Dev, where I contribute to the development of the Altagem
+							application, focusing on feature integration, performance optimization,
+							and bug fixing. I am actively seeking new opportunities to further enhance
+							my skills and take on new technical challenges.
 						</p>
 
 						<ul class="fh5co-social-icons">
 							<li><a href="https://github.com/lakhaloumaima"><i class="icon-github2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/lakhal-oumaima-a02ab71ba/"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/lakhal-oumaima-a02ab71ba/"><i
+										class="icon-linkedin2"></i></a></li>
 							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							
+
 							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
 						</ul>
 						</p>
@@ -115,88 +148,175 @@
 						<h2>My Resume</h2>
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0">
 						<ul class="timeline">
+
+							<!-- Work Experience -->
 							<li class="timeline-heading text-center animate-box">
 								<div>
 									<h3>Work Experience</h3>
 								</div>
 							</li>
+
+							<!-- Com&Dev -->
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Full Web Stack Developer</h3>
-										<span class="company">Com&Dev - 09/2022 -> Present</span>
+										<h3 class="timeline-title">Full Stack Web Developer</h3>
+										<span class="company">Com&Dev · Sep 2022 – Present | Sousse, Tunisia</span>
 									</div>
 									<div class="timeline-body">
-										<p>Design and development of web applications.</p>
+										<p>
+											• Design, develop, and maintain scalable web applications.<br>
+											• Contribute to the development of the Altagem platform.<br>
+											• Integrate new features and enhance existing functionalities.<br>
+											• Optimize application performance and fix technical issues.<br>
+											• Collaborate with cross-functional teams to deliver high-quality solutions.
+											• Participated in requirement analysis and testing phases.
+
+										</p>
 									</div>
 								</div>
 							</li>
+
+							<!-- EduSmart AI (PFE Project) -->
 							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Full Web Stack Developer | Intern </h3>
-										<span class="company">Hexashore - 02/2022 ->06/2022 </span>
+										<h3 class="timeline-title">EduSmart AI – Intern (PFE) </h3>
+										<span class="company">Com&Dev · 2024 – 2025</span>
 									</div>
 									<div class="timeline-body">
-										<p>Design and development of a freelance web application .</p>
+										<p>
+											• Developed an AI-powered personalized learning platform.<br>
+											• Implemented intelligent recommendations, performance tracking, and
+											adaptive learning modules.
+										</p>
 									</div>
 								</div>
 							</li>
+							<!-- Leave Management System (PFA Project) -->
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Full Stack Developer | Intern </h3>
-										<span class="company">Itgate group - 08/2021 -> 09/2021</span>
+										<h3 class="timeline-title">Leave Management System – Intern (PFA) </h3>
+										<span class="company">Com&Dev · 2023 – 2024</span>
 									</div>
 									<div class="timeline-body">
-										<p>Creation of an e-commerce website .</p>
+										<p>
+											• Developed a web-based leave management system.<br>
+											• Implemented employee leave request submission, approval workflows, and
+											tracking.
+										</p>
 									</div>
 								</div>
 							</li>
+
+							<!-- Hexashore -->
 							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Intern </h3>
-										<span class="company">SITEX - 01/2020 -> 02/2020</span>
+										<h3 class="timeline-title">Full Stack Web Developer | Intern (PFE) </h3>
+										<span class="company">Hexashore · Feb 2022 – Jun 2022</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• Designed and developed a freelance web application.<br>
+											• Implemented front-end interfaces using HTML, CSS, and JavaScript.<br>
+											• Developed back-end features and database interactions.<br>
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<!-- Itgate -->
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Full Stack Developer | Intern (PFA) </h3>
+										<span class="company">Itgate Group · Aug 2021 – Sep 2021</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• Developed an e-commerce web application.<br>
+											• Implemented product listing, cart, and order management features.<br>
+											• Worked on both front-end and back-end development tasks.
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<!-- SITEX -->
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Intern</h3>
+										<span class="company">SITEX · Jan 2020 – Feb 2020</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											• Introduction to software development processes.<br>
+											• Assisted in basic development and technical tasks.
+										</p>
 									</div>
 								</div>
 							</li>
 
 							<br>
+
+							<!-- Education -->
 							<li class="timeline-heading text-center animate-box">
 								<div>
 									<h3>Education</h3>
 								</div>
 							</li>
+
+							<!-- ISET -->
 							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Bachelor's Degree  ( License )</h3>
-										<span class="company">ISET Sousse - 2019 -> 2022 </span>
+										<h3 class="timeline-title">Bachelor’s Degree (Licence) in Computer Science</h3>
+										<span class="company">ISET Sousse · 2019 – 2022</span>
 									</div>
-									
 								</div>
 							</li>
+
+							<!-- Baccalaureate -->
 							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Diploma Course ( Baccalaureate )</h3>
-										<span class="company">Hay Riadh 2 -> 2019 </span>
+										<h3 class="timeline-title">High School Diploma (Baccalaureate)</h3>
+										<span class="company">Hay Riadh 2 High School · 2019</span>
 									</div>
-									
 								</div>
 							</li>
-						
-							
+
 						</ul>
 					</div>
 				</div>
@@ -204,7 +324,9 @@
 		</div>
 
 
-		<div id="fh5co-features" class="animate-box">
+
+		<!-- Services Section -->
+		<!-- <div id="fh5co-features" class="animate-box">
 			<div class="container">
 				<div class="services-padding">
 					<div class="row">
@@ -213,8 +335,6 @@
 						</div>
 					</div>
 					<div class="row">
-						
-
 						<div class="col-md-4 text-center">
 							<div class="feature-left">
 								<span class="icon">
@@ -222,243 +342,303 @@
 								</span>
 								<div class="feature-copy">
 									<h3>Web Development</h3>
-									
+									<p>Full stack web development including Ruby on Rails, Laravel, Angular, and modern
+										front-end technologies.</p>
 								</div>
 							</div>
-
 						</div>
-					
 					</div>
-
-
-					
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div id="fh5co-skills" class="animate-box">
+		<!-- Skills Section -->
+		<!-- Work & Skills Section -->
+		<div id="fh5co-skills" class="fh5co-bg-dark">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Skills</h2>
-					</div>
-				</div>
-				<div class="row row-pb-md">
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="90"><span><strong>CSS3</strong>90%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="90"><span><strong>JS</strong>90%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="80"><span><strong>Angular</strong>80%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="70"><span><strong>ReactJs</strong>70%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="80"><span><strong>Ruby on rails</strong>80%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="70"><span><strong>NodeJs</strong>70%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="70"><span><strong>Php </strong>50%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="50"><span><strong>Laravel</strong>50%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="85"><span><strong>MySQL</strong>90%</span></div>
-					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="90"><span><strong>PostgreSql</strong>90%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="80"><span><strong>MongoDB</strong>80%</span></div>
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-		
-		<div id="fh5co-work" class="fh5co-bg-dark">
-			<div class="container">
+
+				<!-- Heading -->
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Work</h2>
+						<h2>Professional Skills & Work</h2>
+						<p style="color: #fff;">Focused on modern web development, agile workflows, and scalable
+							applications.</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#" class="work" style="background-image: url(images/web.png);">
-							<div class="desc">
-								<h3>Freelancy </h3>
-								<span>Web <br> - ruby on rails - angular - postgresql  </span>
-							</div>
-						</a>
+
+				<!-- Skills / Tools -->
+				<div class="row row-pb-md text-center">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+							title="HTML5" alt="HTML5" width="50" height="50">
+						<p>HTML5</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg"
+							title="CSS3" alt="CSS3" width="50" height="50">
+						<p>CSS3</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+							title="JavaScript" alt="JavaScript" width="50" height="50">
+						<p>JavaScript</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
+							title="Angular" alt="Angular" width="50" height="50">
+						<p>Angular</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg"
+							title="Ruby on Rails" alt="Ruby on Rails" width="50" height="50">
+						<p>Ruby on Rails</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+							title="PostgreSQL" alt="PostgreSQL" width="50" height="50">
+						<p>PostgreSQL</p>
 					</div>
 
-					<div class="row">
-						<div class="col-md-3 text-center col-padding animate-box">
-							<a href="#" class="work" style="background-image: url(images/web.png);">
-								<div class="desc">
-									<h3>internship management </h3>
-									<span>Web <br> - ruby on rails - angular - postgresql  </span>
-								</div>
-							</a>
+				</div>
+
+				<div class="row row-pb-md text-center">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+							title="Git" alt="Git" width="50" height="50">
+						<p>Git</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+							title="Docker" alt="Docker" width="50" height="50">
+						<p>Docker</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" title="Laravel"
+							alt="Laravel" width="50" height="50">
+						<p>Laravel</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+							title="ReactJS" alt="ReactJS" width="50" height="50">
+						<p>ReactJS</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+							title="NodeJS" alt="NodeJS" width="50" height="50">
+						<p>NodeJS</p>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+							title="MySQL" alt="MySQL" width="50" height="50">
+						<p>MySQL</p>
+					</div>
+
+				</div>
+
+				<br><br><br><br>
+				<!-- Projects Section -->
+				<div id="fh5co-work" class="fh5co-bg-dark">
+					<div class="container">
+						<div class="row animate-box">
+							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+								<h2 style="color: #fff;">Projects</h2>
+								<p style="color: #fff;">Here are some of the key projects I’ve worked on, showcasing my
+									full-stack development experience and engineering skills.</p>
+							</div>
 						</div>
-						<div class="col-md-3 text-center col-padding animate-box">
-							<a href="#" class="work" style="background-image: url(images/web.png);">
-								<div class="desc">
-									<h3>sale of sports equipment </h3>
-									<span>Web <br> - angular </span>
+
+						<div class="row">
+							<!-- Altagem (Current Job) -->
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>Altagem</h3>
+									<p>Full Stack Web Application at <strong>Com-and-Dev</strong> - Developed with Ruby
+										on Rails, Angular, and PostgreSQL. Focused on feature integration, optimization,
+										and bug fixing for enterprise application management.</p>
 								</div>
-							</a>
-						</div> 
-					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#" class="work" style="background-image: url(images/web.png);">
-							<div class="desc">
-								<h3>E shopper </h3>
-								<span>Web <br> - nodeJs - reactJs - mongoDB  </span>
 							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#" class="work" style="background-image: url(images/web.png);">
-							<div class="desc">
-								<h3>task planning <br>according to scrum  </h3>
-								<span>Web <br> - reactJs   </span>
+
+							<!-- EduSmart (PFE Project) -->
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>EduSmart AI</h3>
+									<p>Final Year Engineering Project (PFE) - AI-powered personalized learning platform.
+										Built with Ruby on Rails, Angular, and PostgreSQL, featuring intelligent
+										recommendations, performance tracking, and adaptive learning modules.</p>
+								</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#" class="work" style="background-image: url(images/web.png);">
-							<div class="desc">
-								<h3>patient management </h3>
-								<span>Web <br> - php - mysql   </span>
+
+							<!-- Leave Management System (PFA Project) -->
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>Leave Management System</h3>
+									<p>Final Year Internship Project (PFA) - Web-based leave management system.
+										Developed with Ruby on Rails, Angular, and PostgreSQL, enabling efficient
+										employee
+										leave
+										requests and approvals.</p>
+								</div>
 							</div>
-						</a>
-					</div>
-					
-					<div class="col-md-3 text-center col-padding animate-box">
-						<a href="#" class="work" style="background-image: url(images/mobile.png);">
-							<div class="desc">
-								<h3>student management </h3>
-								<span>Mobile <br> - Java</span>
+
+							<!-- Freelancy (PFE License Project) -->
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>Freelancy</h3>
+									<p>PFE License Project - Freelance platform developed with Ruby on Rails and
+										Angular.
+										Allows users to post projects, hire freelancers, manage tasks, and track
+										payments
+										efficiently. Focused on real-world web application features and usability.</p>
+								</div>
 							</div>
-						</a>
+						</div>
+
+						<div class="row">
+
+							<!-- Additional Project Examples -->
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>E-Shopper</h3>
+									<p>Web application for e-commerce using NodeJS, ReactJS, and MongoDB. Includes
+										product catalog, shopping cart, and user authentication.</p>
+								</div>
+							</div>
+
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>Task Planning (Scrum)</h3>
+									<p>Web-based task planning tool built with ReactJS. Supports Scrum methodology,
+										sprint planning, and progress tracking for agile teams.</p>
+								</div>
+							</div>
+
+							<div class="col-md-3 text-center col-padding animate-box">
+								<div class="work-desc">
+									<h3>Patient Management</h3>
+									<p>Healthcare web application using PHP and MySQL. Manages patient records,
+										appointments, and medical history for clinics.</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
-					
-					
-					
 				</div>
+
 			</div>
-		</div>
-	
-
-
-
-		<div id="fh5co-started" class="fh5co-bg-dark">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Hire Me!</h2>
-						
-						<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-consult">
-			<div class="video fh5co-video" style="background-image: url(images/); ">
+			<!-- Hire Me Section -->
+			<div id="fh5co-consult" class="fh5co-bg-dark">
 				<div class="overlay"></div>
-			</div>
-			<div class="choose animate-box">
-				<h2>Contact</h2>
-				<form action="#">
-					<div class="row form-group">
-						<div class="col-md-6">
-							<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>Hire Me!</h2>
+							<p><a href="#fh5co-consult" class="btn btn-default btn-lg">Contact Me</a></p>
 						</div>
 					</div>
-					<div class="row form-group">
-						<div class="col-md-6">
-							<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<input type="text" id="email" class="form-control" placeholder="Your email address">
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<input type="text" id="subject" class="form-control"
-								placeholder="Your subject of this message">
-						</div>
-					</div>
-
-					<div class="row form-group">
-						<div class="col-md-12">
-							<textarea name="message" id="message" cols="30" rows="10" class="form-control"
-								placeholder="Say something about us"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Send Message" class="btn btn-primary">
-					</div>
-
-				</form>
-			</div>
-		</div>
-
-		
-	</div>
-
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; All Rights Reserved. <br>Designed by <a > Lakhal Oumaima </a> 
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
+			<!-- Contact Section -->
+			<div id="fh5co-consult">
+				<div class="choose col-md-6">
+					<div id="map"></div>
+				</div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+				<div class="choose animate-box">
+					<h2>Contact</h2>
+					<form action="#">
+						<div class="row form-group">
+							<div class="col-md-6">
+								<input type="text" id="fname" class="form-control" placeholder="Your First Name">
+							</div>
+							<div class="col-md-6">
+								<input type="text" id="lname" class="form-control" placeholder="Your Last Name">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<input type="email" id="email" class="form-control" placeholder="Your Email Address">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<input type="text" id="subject" class="form-control" placeholder="Subject">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control"
+									placeholder="Your Message"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+					</form>
+				</div>
+			</div>
 
-	<!-- Main -->
-	<script src="js/main.js"></script>
+
+			<div id="fh5co-footer">
+				<div class="container">
+					<div class="row">
+						<!-- <div class="col-md-12">
+							<p>&copy; All Rights Reserved. <br>Designed by <a> Lakhal Oumaima </a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="gototop js-top">
+				<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+			</div>
+
+			<!-- jQuery -->
+			<script src="js/jquery.min.js"></script>
+			<!-- jQuery Easing -->
+			<script src="js/jquery.easing.1.3.js"></script>
+			<!-- Bootstrap -->
+			<script src="js/bootstrap.min.js"></script>
+			<!-- Waypoints -->
+			<script src="js/jquery.waypoints.min.js"></script>
+			<!-- Stellar Parallax -->
+			<script src="js/jquery.stellar.min.js"></script>
+			<!-- Easy PieChart -->
+			<script src="js/jquery.easypiechart.min.js"></script>
+			<!-- Google Map -->
+			<script
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+			<script src="js/google_map.js"></script>
+
+			<!-- Main -->
+			<script src="js/main.js"></script>
 
 </body>
 
 </html>
+
+<!-- Smooth Scroll Script -->
+<script>
+	document.querySelectorAll('a.smoothscroll').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
+	function initMap() {
+		const location = { lat: 35.8286, lng: 10.63699 }; // Monastir, Tunisia
+		const map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 14,
+			center: location,
+		});
+		const marker = new google.maps.Marker({
+			position: location,
+			map: map,
+			title: "Lakhal Oumaima",
+		});
+	}
+</script>
